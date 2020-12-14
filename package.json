@@ -1,0 +1,18 @@
+{
+  "name": "algebrain",
+  "version": "0.0.1",
+  "description": "A minimal application for learning Math",
+  "main": "main.js",
+  "scripts": {
+    "test": "electron ."
+  },
+  "keywords": [
+    "Math",
+    "algebra"
+  ],
+  "author": "Carlos Bolívar",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^11.0.4"
+  }
+}

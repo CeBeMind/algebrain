@@ -1,0 +1,85 @@
+/*** FONTS ***/
+
+/* Imported Fonts */
+
+@font-face {
+	font-family: cocogoose;
+	src: url("../fonts/Cocogoose&Pro&Light-Trial.ttf");
+}
+
+/*global styles*/
+
+.tx {
+	word-wrap: break-word;
+	word-break: keep-all;
+}
+
+/*text styles*/
+
+.tx .normal {
+	font-family: cocogoose,helvetica,"arial black";
+}
+
+.tx .traveller {
+	font-family: candara, gadugi, verdana;
+	color: #fff;
+	
+}
+
+.tx .futurist {
+	font-family: helvetica ;
+	color: #fff;
+
+}
+
+.tx .weird {
+
+}
+
+.tx .old {
+	
+}
+
+/* Text size */
+.tx .small {
+	font-size: .8em;
+}
+
+.tx .small2 {
+	font-size: 1em;
+}
+
+.tx .medium {
+	font-size: 1.2em;
+}
+
+.tx .large {
+	font-size: 1.5em;
+}
+
+.tx .large2 {
+	font-size: 2em;
+}
+
+/*** BUTTONS ***/
+
+.btn {
+	margin: .3em;
+	padding: .3em;
+	cursor: pointer;
+}
+
+.btn-clean {
+	font-family: cocogoose;
+	color: white;
+	background-color: rgba(255,255,255,.1);
+	border-radius: 3px;
+	transition: .6s;
+	align-self: center;
+}
+
+.btn-clean:hover {
+	color: #000;
+	background-color: rgba(255,255,255,.7);
+	transform: scale(1.1);
+}

@@ -1,0 +1,1 @@
+// Script that shows a loading screen

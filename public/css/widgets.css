@@ -1,0 +1,133 @@
+/* Widgets styles */
+
+/* Images */
+.image {
+	display: flex;
+	max-width: 100%;
+	min-width: 50%;
+	height: auto;
+}
+
+.image .rounded{
+	border: 20px solid #fff;
+	border-radius: 50%;
+	box-shadow: 0px 3px 3px #336915;
+}
+
+.image .bluerred{
+	filter: blur(42%);
+}
+
+.image .grayscaled{
+	filter: grayscale(100%);
+}
+
+.sidenote {
+	display: flex;
+}
+
+.w-paragraph {
+
+}
+
+.w-paragraph {
+
+}
+
+.w-paragraph {
+
+}
+
+.w-paragraph {
+
+}
+
+.w-paragraph {
+
+}
+
+/* Cards */
+
+/* Brilliant-card */
+.brilliant-card {
+	display: flex;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	border: solid #fdf 1.618034px;
+	box-shadow: 0px 3px 3px #fff;
+	width: 15%;
+	min-width: 50px;
+	height: 35%;
+	min-height: 80px;
+	transform-origin: center top;
+	transform-style: preserve-3d;
+	transform: translateZ(0);
+	transition: .3s;
+}
+
+.brilliant-card .image {
+	object-fit: cover;
+	min-height: 100%;
+	transition: .3s;
+}
+
+.brilliant-card .text {
+	bottom: 0;
+	position: absolute;
+	transform: translateY(100%);
+	transition: .3s;
+}
+
+.brilliant-card:after {
+	content: '';
+	z-index: 10;
+	position: absolute;
+	width: 200%;
+	height: 100%;
+	top: -90%;
+	left: -20px;
+	opacity: 0.1;
+	transform: rotate(48.54deg);
+	background: linear-gradient(to top, transparent, #fff 15%, rgba(255,255,255,0.5));
+	transition: .3s;
+}
+
+.brilliant-card:hover,
+.brilliant-card:focus {
+	box-shadow: 0px 6px 6px #fee;
+	transform: translateY(-6px) scale(1.05) rotate(3deg);
+}
+
+.brilliant-card:active {
+	border: solid #fdf 6px;
+}
+
+.brilliant-card:hover .image,
+.brilliant-card:focus .image,
+.brilliant-card:active .image {
+	transform: scale(1.1);
+}
+.brilliant-card:hover .text,
+.brilliant-card:focus .text,
+.brilliant-card:active .text {
+	transform: translateY(0%);
+}
+
+.brilliant-card:hover:after,
+.brilliant-card:focus:after,
+.brilliant-card:active:after {
+	transform: rotate(48.54deg);
+	top: -40%;
+	opacity: 0.15;
+}
+
+/* Another optional properties */
+
+.w-left {
+	
+}
+
+.w-right {
+
+}

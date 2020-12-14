@@ -1,0 +1,46 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.chess-grid {
+	display: grid;
+	grid-template-columns: [header-start footer-start left-start] 12.5% [short-header-start short-footer-start main-start short-main-start center-start left-end] 12.5% [short-center-start] 12.5% 12.5% [short-main-end] 12.5% [main-end] 12.5% [right-start short-center-end] 12.5% [short-header-end short-footer-end center-end] 12.5% [header-end footer-end right-end];
+	grid-template-rows: [header-start short-header-start] 12.5% [header-end short-header-end main-start short-main-start center-start left-start] 12.5% [short-center-start] 12.5% 12.5% 12.5% 12.5% [short-center-end] 12.5% [footer-start short-footer-start main-end center-end left-end] 12.5% [footer-end short-footer-end];
+	grid-auto-columns: 12.5%;
+	grid-auto-rows: 12.5%;
+	grid-auto-flow: column;
+	/*In case, grid visualization:
+		"[header-start] [short-header-start] 						[] 					[] 	[] 				[] 					[] 					[short-header-end] 		[header-end]"
+		"[left-start] 	[main-start short-main-start center-start]	[] 					[] 	[short-main-end][main-end] 			[right-start]		[center-end] 			[right-end]	"
+		"[] 			[] 											[short-center-start][] 	[] 				[] 					[short-center-end] 	[] 						[]			"
+		"[] 			[] 											[] 					[] 	[] 				[] 					[] 					[] 						[]			"
+		"[] 			[] 											[] 					[] 	[] 				[] 					[] 					[]						[]			"
+		"[] 			[] 											[short-center-end] 	[] 	[] 				[] 					[] 					[] 						[]			"
+		"[left-end] 	[main-end center-end] 						[] 					[] 	[] 				[] 					[right-end] 		[]						[]			"
+		"[footer-start] [short-footer-start] 						[] 					[] 	[] 				[] 					[] 					[short-footer-end] 		[footer-end]"; */
+	place-items: stretch stretch;
+	justify-content: center;
+	align-content: center;
+}
+
+.fibonacci-grid {
+	display: grid;
+	grid-template-columns: [thirteen-start thirty-four-start] 13fr [thirteen-end twenty-one-start] 21fr [twenty-one-end thirty-four-end fifty-five-start] 55fr [fifty-five-end] ;
+	grid-template-rows: [thirteen-start twenty-one-start fifty-five-start] 21fr [thirteen-end twenty-one-end thirty-four-start] 34fr [thirty-four-end fifty-five-end];
+	grid-auto-columns: 12.5%;
+	grid-auto-rows: 12.5%;
+	grid-auto-flow: column;
+	place-items: stretch stretch;
+	justify-content: center;
+	align-content: center;
+}
+
+.essential-flex {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	vertical-align: center;
+}
